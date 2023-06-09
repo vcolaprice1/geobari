@@ -43,7 +43,7 @@
   }).addTo(map);
 
   // display Carto basemap tiles with light features and labels
-  var light = L.tileLayer('.1884/{z}/{x}/{y}.png', {
+  var light = L.tileLayer('./1884/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map); // EDIT - insert or remove ".addTo(map)" before last semicolon to display by default
   controlLayers.addBaseLayer(light, 'Carto Light basemap');
